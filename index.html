@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Image Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🤖 AI Image Checker</h1>
+        <p>Check whether an image is likely AI-generated or real.</p>
+    </header>
+
+    <main>
+
+        <section class="upload-box">
+
+            <h2>Upload an Image</h2>
+
+            <p>Select an image from your device</p>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+            >
+
+            <div id="previewContainer">
+                <img id="preview" alt="Image Preview">
+            </div>
+
+            <button id="analyzeButton">
+                🔍 Analyze Image
+            </button>
+
+        </section>
+
+        <section id="resultBox" class="result-box">
+
+            <h2>Analysis Result</h2>
+
+            <p id="resultText">
+                Upload an image to begin.
+            </p>
+
+            <p id="confidence"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>AI Image Checker • Version 1</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
